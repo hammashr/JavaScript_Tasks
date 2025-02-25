@@ -1,0 +1,31 @@
+
+
+<!-- 6.  Randomly generate an array and then create a function to pick 1st and last element of 
+ that generated array.. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- display the first and last element of the array -->
+    <button onclick="pickFirstAndLast(arr)">Pick First and Last</button>
+    <p id="result"></p>
+    
+</body>
+<script>
+    // Randomly generate an array and then create a function to pick 1st and last element of that generated array.
+    var arr = [9999, 8888, 7777, 6666, 5555, 4444, 3333, 2222, 1111, 1000];
+    function pickFirstAndLast(arr){
+        var first = arr[0];
+        var last = arr[arr.length - 1];
+        console.log(first, last);
+        document.getElementById("result").innerHTML = "First element: " + first + " and Last element: " + last;
+    }
+   
+</script>
+</html>

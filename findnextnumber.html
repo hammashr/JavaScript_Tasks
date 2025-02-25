@@ -1,0 +1,28 @@
+
+
+<!-- 3. Create a function to find the number next to a certain number -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input" placeholder="Enter a number">
+    <button onclick="findNextNumber()">Find Next Number</button>
+    <p id="result"></p>
+    
+</body>
+<script>
+    // Create a function to find the next number of the given number.
+    function findNextNumber(){
+        var input = document.getElementById("input").value;
+        var nextNumber = parseInt(input) + 1;
+        document.getElementById("result").innerHTML = "The next number of " + input + " is " + nextNumber;
+    }
+
+</script>
+</html>

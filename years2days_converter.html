@@ -1,0 +1,42 @@
+
+
+<!-- 1. Age to Days converter : When a user enters age (in years), the converter will convert 
+ it to days.. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="years" placeholder="Enter the number of years">
+    <br>
+    <br>
+    <div>
+        <button onclick="years2days()">Convert_2_days</button>
+        <p id="result"></p>
+        <button onclick="years2hours()">Convert_2_hours</button>
+        <p id="results"></p>
+    </div>
+   
+    
+</body>
+<script>
+    // declaring a variable to store the number of years
+
+    var Years = parseInt(Input);
+    function years2days() {
+    Years = document.getElementById("years").value;
+    var Days = Years * 365;
+    document.getElementById("result").innerHTML = Years + " years is equal to " + Days + " days.";
+    }
+    function years2hours() {
+    Years = document.getElementById("years").value;
+    var Hours = Years * 8760;
+    document.getElementById("results").innerHTML = Years + " years is equal to " + Hours + " Hourss.";
+    }
+</script>
+</html>

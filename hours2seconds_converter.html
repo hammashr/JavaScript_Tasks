@@ -1,0 +1,32 @@
+
+
+<!-- 2. Hours to seconds converter -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="hours" placeholder="Enter the number of hours">
+    <br>
+    <br>
+    <div>
+        <button onclick="hours2seconds()">Convert_2_seconds</button>
+        <p id="result"></p>
+    </div>
+    
+</body>
+<script>
+    var Hours = parseInt(Input);
+    function hours2seconds() {
+    Hours = document.getElementById("hours").value;
+    var Seconds = Hours * 3600;
+    document.getElementById("result").innerHTML = Hours + " hours is equal to " + Seconds + " seconds.";
+    }
+
+</script>
+</html>

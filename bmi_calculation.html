@@ -1,0 +1,50 @@
+
+
+<!-- 5. Create a function to calculate BMI(Body-Mass-Index) by asking user to enter his/her 
+ weight and height. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="height" placeholder="Enter your height in meters">
+    <br>
+    <br>
+    <input type="text" id="weight" placeholder="Enter your weight in kilograms">
+    <br>
+    <br>
+    <div>
+        <button onclick="bmi()">Calculate_BMI</button>
+        <p id="result"></p>
+    </div>
+    
+</body>
+<script>
+    var Height = parseInt(Input);
+    var Weight = parseInt(Input);
+    function bmi() {
+    Height = document.getElementById("height").value;
+    Weight = document.getElementById("weight").value;
+    var BMI = Weight / (Height * Height);
+    document.getElementById("result").innerHTML = "Your BMI is: " + BMI;
+    if(BMI < 18.5){
+        document.getElementById("result").innerHTML = "Your BMI is: " + BMI + " which means you are underweight.";
+    }
+    else if(BMI >= 18.5 && BMI <= 24.9){
+        document.getElementById("result").innerHTML = "Your BMI is: " + BMI + " which means you are normal weight.";
+    }
+    else if(BMI >= 25 && BMI <= 29.9){
+        document.getElementById("result").innerHTML = "Your BMI is: " + BMI + " which means you are overweight.";
+    }
+    else if(BMI >= 30){
+        document.getElementById("result").innerHTML = "Your BMI is: " + BMI + " which means you are obese.";
+    }
+    }
+    
+</script>
+</html>

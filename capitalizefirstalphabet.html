@@ -1,0 +1,33 @@
+
+
+<!-- 4. Ask user to enter his/her name( in lowercase only), and then display the name in such a way 
+ that the first letter of the name must be capitalised.. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name" placeholder="Enter your name in lowercase">
+    <br>
+    <br>
+    <div>
+        <button onclick="display()">Convert_2_uppercase</button>
+        <p id="result"></p>
+    </div>
+    
+</body>
+<script>
+    // no need to use parseInt() here because we are not converting a string to an integer
+    var Name = Input;
+    function display() {
+    Name = document.getElementById("name").value;
+    var Name = Name.charAt(0).toUpperCase() + Name.slice(1);
+    document.getElementById("result").innerHTML = "Your name in uppercase is: " + Name;
+    }
+</script>
+</html>
